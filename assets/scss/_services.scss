@@ -1,0 +1,68 @@
+@import 'mixin';
+@import 'variables';
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: -10rem;
+    margin-bottom: 15rem;
+}
+
+.service-card {
+    flex: 1 1 20%;
+    position: relative;
+    @media (max-width: 75em) {
+        flex: 1 1 45%;
+    }
+
+    @media (max-width: 37.5em) {
+        flex: 1 1 100%;
+    }
+    &__heading {
+        margin-top: 2rem;
+        margin-bottom: 1.1rem;
+    }
+    &:hover > &--front{
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+    &:hover > &--back{
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+.service-card--front, .service-card--back {
+    @include center-item;
+    min-height: 250px;
+    flex: 1 1 20%;
+    padding: 4rem 6rem;
+    flex-direction: column;
+    background-color: $WHITE;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 11;
+}
+
+.service-card--front {
+
+    transition: all .7s ease;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+}
+
+.service-card--back {
+    position: absolute;
+    transition: all .7s ease;
+    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: rotateY(180deg);
+}

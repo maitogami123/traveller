@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Traveler - Find yourself outside</title>
+</head>
+<body>
+    <img src="./assets/img/bg-fragment.png" alt="" class="background__fragment-1">
+    <img src="./assets/img/bg-fragment.png" alt="" class="background__fragment-2">
+    <i class="fas fa-arrow-up nav__icon nav__icon-to-top hidden"></i>
+
+    <header class="hero-section">
+        <nav class="nav mobile-hidden">
+            <ul class="nav__items">
+                <li><a href="#" class="nav__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                        <g id="Group_86" data-name="Group 86" transform="translate(0 -0.266)">
+                            <circle id="Ellipse_39" data-name="Ellipse 39" cx="25" cy="25" r="25" transform="translate(0 0.266)" fill="#e76f51"/>
+                            <path id="Path_623" data-name="Path 623" d="M18.962-15.292a4.18,4.18,0,0,1-.3,1.237A3.231,3.231,0,0,1,17.951-13a3.642,3.642,0,0,1-1.139.756,5.089,5.089,0,0,1-1.6.373,7.131,7.131,0,0,1-1.757-.059q-.854-.137-1.7-.314t-1.678-.324A6.871,6.871,0,0,0,8.4-12.661a5.757,5.757,0,0,0-1.394.294,3.813,3.813,0,0,0-1.217.677,3.266,3.266,0,0,0-.854,1.119,3.674,3.674,0,0,0-.324,1.6,3.04,3.04,0,0,0,.236,1.227,4.13,4.13,0,0,0,.54.923,3.008,3.008,0,0,0,.579.579q.275.2.353.177a6.332,6.332,0,0,1-2.748.2A4.347,4.347,0,0,1,1.53-6.762,4.028,4.028,0,0,1,.313-8.46a4.731,4.731,0,0,1-.275-2.2,5.461,5.461,0,0,1,.638-2.12,5.239,5.239,0,0,1,1.355-1.6,6.385,6.385,0,0,1,1.953-1.031,8.462,8.462,0,0,1,2.434-.412,10.11,10.11,0,0,1,2.365.2q1.148.236,2.248.55t2.13.6a10.79,10.79,0,0,0,2.022.363,5.8,5.8,0,0,0,1.934-.167A4.707,4.707,0,0,0,18.962-15.292ZM7.93-9.343q.039-.118.147-.471a3.866,3.866,0,0,0,.147-.756,2.423,2.423,0,0,0-.049-.785.807.807,0,0,0-.422-.559q.393.02.471.02h.51a4.481,4.481,0,0,1,2.13.53,3.007,3.007,0,0,1,1.129,1.129,2.883,2.883,0,0,1,.353,1.384,3.964,3.964,0,0,1-.2,1.3L9.971-1.118Q9.932-1,9.824-.647a3.866,3.866,0,0,0-.147.756,2.423,2.423,0,0,0,.049.785.807.807,0,0,0,.422.559q-.393-.02-.471-.02h-.51A4.481,4.481,0,0,1,7.037.9,3.007,3.007,0,0,1,5.908-.225a2.883,2.883,0,0,1-.353-1.384,3.964,3.964,0,0,1,.2-1.3Z" transform="translate(15.989 32.095)" fill="#fff"/>
+                        </g>
+                    </svg>                      
+                </a></li>
+                <li><a href="#" class="nav__item nav__item--active card-heading">Home</a></li>
+                <li><a href="#" class="nav__item card-heading">Destination</a></li>
+                <li><a href="#" class="nav__item card-heading">Near me</a></li>
+                <li><a href="#" class="nav__item card-heading">Events</a></li>
+                <li><a href="#" class="nav__item card-heading">Blog</a></li>
+                <li><a href="#" class="nav__item card-heading">Gallery</a></li>
+                <li><a href="#" class="nav__item card-heading">About</a></li>
+                <li><a href="#" class="nav__item card-heading">Contact us</a></li>
+            </ul>
+            <div class="seperate-line"></div>
+            <ul class="nav__login">
+                <li><a href="#" class="nav__item card-heading">Sign up</a></li>
+                <li><a href="#" class="nav__login-item card-heading nav__login-item--border">Sign in</a></li>
+            </ul>
+        </nav>
+        <nav class="nav__mobile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <g id="Group_86" data-name="Group 86" transform="translate(0 -0.266)">
+                    <circle id="Ellipse_39" data-name="Ellipse 39" cx="25" cy="25" r="25" transform="translate(0 0.266)" fill="#e76f51"/>
+                    <path id="Path_623" data-name="Path 623" d="M18.962-15.292a4.18,4.18,0,0,1-.3,1.237A3.231,3.231,0,0,1,17.951-13a3.642,3.642,0,0,1-1.139.756,5.089,5.089,0,0,1-1.6.373,7.131,7.131,0,0,1-1.757-.059q-.854-.137-1.7-.314t-1.678-.324A6.871,6.871,0,0,0,8.4-12.661a5.757,5.757,0,0,0-1.394.294,3.813,3.813,0,0,0-1.217.677,3.266,3.266,0,0,0-.854,1.119,3.674,3.674,0,0,0-.324,1.6,3.04,3.04,0,0,0,.236,1.227,4.13,4.13,0,0,0,.54.923,3.008,3.008,0,0,0,.579.579q.275.2.353.177a6.332,6.332,0,0,1-2.748.2A4.347,4.347,0,0,1,1.53-6.762,4.028,4.028,0,0,1,.313-8.46a4.731,4.731,0,0,1-.275-2.2,5.461,5.461,0,0,1,.638-2.12,5.239,5.239,0,0,1,1.355-1.6,6.385,6.385,0,0,1,1.953-1.031,8.462,8.462,0,0,1,2.434-.412,10.11,10.11,0,0,1,2.365.2q1.148.236,2.248.55t2.13.6a10.79,10.79,0,0,0,2.022.363,5.8,5.8,0,0,0,1.934-.167A4.707,4.707,0,0,0,18.962-15.292ZM7.93-9.343q.039-.118.147-.471a3.866,3.866,0,0,0,.147-.756,2.423,2.423,0,0,0-.049-.785.807.807,0,0,0-.422-.559q.393.02.471.02h.51a4.481,4.481,0,0,1,2.13.53,3.007,3.007,0,0,1,1.129,1.129,2.883,2.883,0,0,1,.353,1.384,3.964,3.964,0,0,1-.2,1.3L9.971-1.118Q9.932-1,9.824-.647a3.866,3.866,0,0,0-.147.756,2.423,2.423,0,0,0,.049.785.807.807,0,0,0,.422.559q-.393-.02-.471-.02h-.51A4.481,4.481,0,0,1,7.037.9,3.007,3.007,0,0,1,5.908-.225a2.883,2.883,0,0,1-.353-1.384,3.964,3.964,0,0,1,.2-1.3Z" transform="translate(15.989 32.095)" fill="#fff"/>
+                </g>
+            </svg>
+            <div class="nav__hamburger">
+                <i class="fas fa-align-right nav__icon nav__icon-menu"></i>
+                <i class="fas fa-times nav__icon nav__icon-close hidden"></i>
+            </div>
+        </nav>
+        <div class="hero-section__content">
+            <h1 class="hero-section__content-heading hero-heading">Find yourself outside</h1>
+            <h3 class="hero-section__content-sub-heading card-heading">
+                Book unique camping experiences on over 300,000 campsites, cabins, RV parks, public parks and more.
+            </h3>
+            <button class="fill-btn-primary card-heading">
+                Discover
+            </button>
+        </div>
+    </header>
+    <section class="services">
+        <div class="service-card">
+            <div class="service-card--front">
+                <img src="./assets/img/bonfire-1.png" alt="" class="service-card__img">
+                <h3 class="service-card__heading card-heading">Camping & Day Use</h3>
+                <p class="service-card__details card-details">Return to your favorite spot or discover a new one that’s right for you.</p>
+            </div>
+            <div class="service-card--back">
+                <h3 class="service-card__heading card-heading">You will get: </h3>
+                <ul class="service-card__list">
+                    <li class="service-card__item card-details">The first thing</li>
+                    <li class="service-card__item card-details">The second thing</li>
+                    <li class="service-card__item card-details">The third thing</li>
+                    <li class="service-card__item card-details">And more</li>
+                </ul>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-card--front">
+                <img src="./assets/img/Group 203.png" alt="" class="service-card__img">
+                <h3 class="service-card__heading card-heading">Camping & Day Use</h3>
+                <p class="service-card__details card-details">Return to your favorite spot or discover a new one that’s right for you.</p>
+            </div>
+            <div class="service-card--back">
+                <h3 class="service-card__heading card-heading">You will get: </h3>
+                <ul class="service-card__list">
+                    <li class="service-card__item card-details">The first thing</li>
+                    <li class="service-card__item card-details">The second thing</li>
+                    <li class="service-card__item card-details">The third thing</li>
+                    <li class="service-card__item card-details">And more</li>
+                </ul>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-card--front">
+                <img src="./assets/img/filled outline-1.png" alt="" class="service-card__img">
+                <h3 class="service-card__heading card-heading">Camping & Day Use</h3>
+                <p class="service-card__details card-details">Return to your favorite spot or discover a new one that’s right for you.</p>
+            </div>
+            <div class="service-card--back">
+                <h3 class="service-card__heading card-heading">You will get: </h3>
+                <ul class="service-card__list">
+                    <li class="service-card__item card-details">The first thing</li>
+                    <li class="service-card__item card-details">The second thing</li>
+                    <li class="service-card__item card-details">The third thing</li>
+                    <li class="service-card__item card-details">And more</li>
+                </ul>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-card--front">
+                <img src="./assets/img/fishing-1.png" alt="" class="service-card__img">
+                <h3 class="service-card__heading card-heading">Camping & Day Use</h3>
+                <p class="service-card__details card-details">Return to your favorite spot or discover a new one that’s right for you.</p>
+            </div>
+            <div class="service-card--back">
+                <h3 class="service-card__heading card-heading">You will get: </h3>
+                <ul class="service-card__list">
+                    <li class="service-card__item card-details">The first thing</li>
+                    <li class="service-card__item card-details">The second thing</li>
+                    <li class="service-card__item card-details">The third thing</li>
+                    <li class="service-card__item card-details">And more</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <img src="./assets/img/Group 313.png" alt="" class="explore__icon">
+        <h2 class="explore__heading section-heading">Explore Destinations & Activities</h2>
+        <div class="explore-card-wrapper">
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+            <div class="explore-card">
+                <figure>
+                    <img src="./assets/img/zach-betten-K-1.jpg" alt="" class="explore-card__img">
+                    <p class="explore-card__pricing card-details">$36/night</p>
+                    <img src="./assets/img/heart-outlined.png" alt="" class="explore-card__favourite">
+                    <img src="./assets/img/heart-filled.png" alt="" class="explore-card__favourite hidden">
+                </figure>
+                <h3 class="explore-card__heading card-heading">Trickle Creek Ranch</h3>
+                <p class="explore-card__details card-details">Book unique camping experiences on over 300,000 campsites.</p>
+                <button class="fill-btn-secondary card-details explore-card__btn">Read more</button>
+            </div>
+        </div>
+        <button class="explore-card__btn-view-more card-heading">View all</button>
+    </section>
+    <section class="mailing">
+        <div class="mailing-wrapper">
+            <h1 class="mailing__heading section-heading">Let's Stay in Touch</h1>
+            <p class="mailing__sub-heading card-details">Get travel planning ideas, helpful tips, and stories from our visitors delivered right to your inbox.</p>
+            <div class="mailing__input-wrapper">
+                <label for="mailing__input" class="mailing__input-label">
+                    <img src="./assets/img/letter.png" alt="">
+                </label>
+                <input type="text" class="mailing__input card-details" placeholder="Email Adress" id="mailing__input">
+                <button class="mailing__btn">
+                    <img src="./assets/img/plane.png" alt="" class="mailing__btn-img">
+                </button>
+            </div>
+        </div>
+        <img src="./assets/img/tent.png" alt="" class="mailing__img">
+    </section>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer__about-us">
+                <h3 class="about-us__heading card-heading">
+                    Hipcamp is everywhere you want to camp.
+                </h3>
+                <p class="about-us__details card-details">
+                    Discover unique experiences on ranches, nature preserves, farms, vineyards, and public campgrounds across the U.S. Book tent camping, treehouses, cabins, yurts, primitive backcountry sites, car camping, airstreams, tiny houses, RV camping, glamping tents and more.
+                </p>
+                <h3 class="download__heading card-heading">
+                    Download our app
+                </h3>
+                <div class="download__stores">
+                    <img src="./assets/img/appstore.png" alt="" class="download__img">
+                    <img src="./assets/img/gg-play.png" alt="" class="download__img">
+                </div>
+            </div>
+            <div class="footer__direct">
+                <div class="direct__wrapper">
+                    <h3 class="card-heading direct__heading">Get to know us</h3>
+                    <ul class="direct__list">
+                        <li><a href="#" class="direct__item card-details">About us</a></li>
+                        <li><a href="#" class="direct__item card-details">Rules & Reservation Policies</a></li>
+                        <li><a href="#" class="direct__item card-details">Accessibility</a></li>
+                        <li><a href="#" class="direct__item card-details">Media center</a></li>
+                        <li><a href="#" class="direct__item card-details">Site map</a></li>
+                    </ul>
+                </div>
+                <div class="direct__wrapper">
+                    <h3 class="card-heading direct__heading">Plan with Us</h3>
+                    <ul class="direct__list">
+                        <li><a href="#" class="direct__item card-details">Find trip Inspiration</a></li>
+                        <li><a href="#" class="direct__item card-details">Build a trip</a></li>
+                        <li><a href="#" class="direct__item card-details">Buy a pass</a></li>
+                        <li><a href="#" class="direct__item card-details">Enter a lottery</a></li>
+                    </ul>
+                </div>
+                <div class="direct__wrapper">
+                    <h3 class="card-heading direct__heading">Let Us Help You</h3>
+                    <ul class="direct__list">
+                        <li><a href="#" class="direct__item card-details">Your account</a></li>
+                        <li><a href="#" class="direct__item card-details">Your Reservation</a></li>
+                        <li><a href="#" class="direct__item card-details">Contact us</a></li>
+                        <li><a href="#" class="direct__item card-details">Help Center</a></li>
+                        <li><a href="#" class="direct__item card-details">Submit Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy-right card-details">
+            © 2020. All rights reserved.
+        </p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
