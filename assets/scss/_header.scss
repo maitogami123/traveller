@@ -14,15 +14,11 @@
 
 @keyframes grow {
     0% {
-        transform: scale(0);
-        top: -100%;
         right: -100%;
         opacity: 0;
     }
     100% {
-        transform: scale(1);
         opacity: 1;
-        top: 0;
         right: 0;
     }
 }
@@ -37,7 +33,6 @@
     position: relative;
     @media (max-width: 75em) {
         animation: grow 1s;
-        transition: all 1s ease;
         background-color: $ORANGE;
         width: 100%;
         position: fixed;
@@ -60,6 +55,7 @@
         }
     }
     &.mobile-hidden {
+        transition: all .3s ease;
         @media (max-width: 75em) {
             display: none;
         }
@@ -88,30 +84,42 @@
 
     &__mobile {
         display: none;
-        position: relative;
+        position: fixed;
+        left: 0;
+        right: 0;
         transition: all .3s ease;
+        z-index: 1000;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75%;
+        justify-content: space-between;
         @media (max-width: 75em) {
-            z-index: 1000;
-            position: fixed;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
             display: flex;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 75%;
-            justify-content: space-between;
-            transition: all .3s ease;
         }
+
         &.active {
             &::after {
+                transition: all .3s ease;
                 content: '';
                 position: absolute;
                 top: 0;
                 left: -100%;
                 right: -100%;
                 bottom: 0;
+                animation: appear .2s ease;
                 background-color: $ORANGE;
             }
+        }
+    }
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
         }
     }
 
@@ -235,9 +243,10 @@
     position: fixed;
     bottom: 10rem;
     right: 10rem;
-    transition: all .3s;
+    transition: all .3s ease;
     box-shadow: 3px 5px 30px rgba(0,0,0,0.2);
     z-index: 1000;
+    opacity: 1;
     &.hidden {
         opacity: 0;
     }
