@@ -11,14 +11,20 @@ document.querySelectorAll('.explore-card__favourite').forEach(item => {
 document.querySelector('.nav__hamburger').onclick = () => {
     document.querySelector('.nav__icon-menu').classList.toggle('hidden');
     document.querySelector('.nav__icon-close').classList.toggle('hidden');
-    document.querySelector('.nav').classList.toggle('mobile-hidden');
+    if (window.getComputedStyle(document.querySelector('.nav')).getPropertyValue('--traslateValue') == '0%')
+        document.querySelector('.nav').style.setProperty('--traslateValue', '100%')
+    else 
+        document.querySelector('.nav').style.setProperty('--traslateValue', '0%')
 }
 
 window.onscroll = () => {
     if (window.scrollY > 50) {
-        document.querySelector('.nav__mobile').classList.add('active')
         document.querySelector('.nav__icon-to-top').classList.remove('hidden')
+        let mobileNav = document.getElementById('nav__mobile');
+        mobileNav.style.setProperty('--bgVar', '#E76F51')
     } else {
+        let mobileNav = document.getElementById('nav__mobile');
+        mobileNav.style.setProperty('--bgVar', 'transparent')
         document.querySelector('.nav__mobile').classList.remove('active')
         document.querySelector('.nav__icon-to-top').classList.add('hidden')
     }

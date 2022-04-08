@@ -168,16 +168,6 @@ a {
   z-index: -1;
 }
 
-@keyframes grow {
-  0% {
-    right: -100%;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    right: 0;
-  }
-}
 .nav {
   z-index: 999;
   width: 75%;
@@ -191,7 +181,6 @@ a {
 }
 @media (max-width: 75em) {
   .nav {
-    animation: grow 1s;
     background-color: #E76F51;
     width: 100%;
     position: fixed;
@@ -205,6 +194,7 @@ a {
     gap: 10rem;
     padding: 0 3rem;
     transition: all 0.3s ease;
+    transform: translateX(var(--traslateValue, 100%));
   }
   .nav__item {
     font-size: 4rem;
@@ -214,14 +204,6 @@ a {
 @media (max-width: 75em) and (max-width: 26.875em) {
   .nav {
     flex-direction: column;
-  }
-}
-.nav.mobile-hidden {
-  transition: all 0.3s ease;
-}
-@media (max-width: 75em) {
-  .nav.mobile-hidden {
-    display: none;
   }
 }
 .nav__items, .nav__login {
@@ -267,7 +249,7 @@ a {
     display: flex;
   }
 }
-.nav__mobile.active::after {
+.nav__mobile::after {
   transition: all 0.3s ease;
   content: "";
   position: absolute;
@@ -276,7 +258,7 @@ a {
   right: -100%;
   bottom: 0;
   animation: appear 0.2s ease;
-  background-color: #E76F51;
+  background-color: var(--bgVar, transparent);
 }
 @keyframes appear {
   0% {
