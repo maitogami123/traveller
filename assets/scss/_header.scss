@@ -20,7 +20,7 @@
     justify-content: space-between;
     padding-top: 2rem;
     position: relative;
-    @media (max-width: 75em) {
+    @media (max-width: 87.5em) {
         background-color: $ORANGE;
         width: 100%;
         position: fixed;
@@ -43,26 +43,23 @@
             flex-direction: column;
         }
     }
-    // &.mobile-hidden {
-    //     transition: all .3s ease;
-    // }
     &__items, &__login {
         display: flex;
         align-items: center;
         li:not(:last-child) {
             margin-right: 3.5rem;
-            @media (max-width: 75em) {
+            @media (max-width: 87.5em) {
                 margin-right: 0;
             }
         }
-        @media (max-width: 75em) {
+        @media (max-width: 87.5em) {
             flex-direction: column;
             align-items: flex-start;
             gap: 2rem;
         }   
     }
 
-    @media (max-width: 75em) {
+    @media (max-width: 87.5em) {
         .nav__logo {
             display: none;
         }
@@ -75,13 +72,13 @@
         right: 0;
         transition: all .3s ease;
         z-index: 1000;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         left: 50%;
         transform: translateX(-50%);
         width: 75%;
         justify-content: space-between;
-        @media (max-width: 75em) {
+        @media (max-width: 87.5em) {
             display: flex;
         }
         &::after {
@@ -94,6 +91,14 @@
             bottom: 0;
             animation: appear .2s ease;
             background-color: var(--bgVar, transparent);
+        }
+        &-logo {
+            width: 7rem;
+            height: 7rem;
+            transition: all .2s ease;
+            &.hidden {
+                opacity: 0;
+            }
         }
     }
 
@@ -166,7 +171,7 @@
                 z-index: -1;
             }
         }
-        @media (max-width: 75em) {
+        @media (max-width: 87.5em) {
             color: $WHITE;
             &::after {
                 left: 0;
@@ -200,7 +205,7 @@
                 border: 1px solid $ORANGE;
             }
         }
-        @media (max-width: 75em) {
+        @media (max-width: 87.5em) {
             font-size: 4rem;
             line-height: 4.8rem;
             border: none;
@@ -235,7 +240,7 @@
     }
 }
 
-@media (max-width: 75em) {
+@media (max-width: 87.5em) {
     .seperate-line {
         width: 2px;
         height: 50%;

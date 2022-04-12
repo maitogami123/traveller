@@ -11,6 +11,7 @@ document.querySelectorAll('.explore-card__favourite').forEach(item => {
 document.querySelector('.nav__hamburger').onclick = () => {
     document.querySelector('.nav__icon-menu').classList.toggle('hidden');
     document.querySelector('.nav__icon-close').classList.toggle('hidden');
+    document.querySelector('.nav__mobile-logo').classList.toggle('hidden');
     if (window.getComputedStyle(document.querySelector('.nav')).getPropertyValue('--traslateValue') == '0%')
         document.querySelector('.nav').style.setProperty('--traslateValue', '100%')
     else 

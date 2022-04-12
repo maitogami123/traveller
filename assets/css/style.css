@@ -179,7 +179,7 @@ a {
   padding-top: 2rem;
   position: relative;
 }
-@media (max-width: 75em) {
+@media (max-width: 87.5em) {
   .nav {
     background-color: #E76F51;
     width: 100%;
@@ -201,7 +201,7 @@ a {
     line-height: 4.8rem;
   }
 }
-@media (max-width: 75em) and (max-width: 26.875em) {
+@media (max-width: 87.5em) and (max-width: 26.875em) {
   .nav {
     flex-direction: column;
   }
@@ -213,19 +213,19 @@ a {
 .nav__items li:not(:last-child), .nav__login li:not(:last-child) {
   margin-right: 3.5rem;
 }
-@media (max-width: 75em) {
+@media (max-width: 87.5em) {
   .nav__items li:not(:last-child), .nav__login li:not(:last-child) {
     margin-right: 0;
   }
 }
-@media (max-width: 75em) {
+@media (max-width: 87.5em) {
   .nav__items, .nav__login {
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
   }
 }
-@media (max-width: 75em) {
+@media (max-width: 87.5em) {
   .nav .nav__logo {
     display: none;
   }
@@ -237,14 +237,14 @@ a {
   right: 0;
   transition: all 0.3s ease;
   z-index: 1000;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   left: 50%;
   transform: translateX(-50%);
   width: 75%;
   justify-content: space-between;
 }
-@media (max-width: 75em) {
+@media (max-width: 87.5em) {
   .nav__mobile {
     display: flex;
   }
@@ -259,6 +259,14 @@ a {
   bottom: 0;
   animation: appear 0.2s ease;
   background-color: var(--bgVar, transparent);
+}
+.nav__mobile-logo {
+  width: 7rem;
+  height: 7rem;
+  transition: all 0.2s ease;
+}
+.nav__mobile-logo.hidden {
+  opacity: 0;
 }
 @keyframes appear {
   0% {
@@ -328,7 +336,7 @@ a {
   background-color: #E76F51;
   z-index: -1;
 }
-@media (max-width: 75em) {
+@media (max-width: 87.5em) {
   .nav__item {
     color: #fff;
   }
@@ -363,7 +371,7 @@ a {
   background-color: #E76F51;
   border: 1px solid #E76F51;
 }
-@media (max-width: 75em) {
+@media (max-width: 87.5em) {
   .nav__login-item {
     font-size: 4rem;
     line-height: 4.8rem;
@@ -396,7 +404,7 @@ a {
   opacity: 0;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 87.5em) {
   .seperate-line {
     width: 2px;
     height: 50%;
@@ -449,7 +457,7 @@ a {
   flex: 1 1 20%;
   position: relative;
 }
-@media (max-width: 75em) {
+@media (max-width: 87.5em) {
   .service-card {
     flex: 1 1 45%;
   }
@@ -536,7 +544,7 @@ a {
   text-align: center;
   box-sizing: border-box;
 }
-@media (max-width: 75em) {
+@media (max-width: 87.5em) {
   .explore-card {
     flex: 1 1 45%;
   }
